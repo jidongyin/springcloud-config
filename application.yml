@@ -1,3 +1,7 @@
+---
+server:
+  port: 8201
+  
 spring:
   profiles:
     active:
@@ -6,8 +10,16 @@ spring:
 spring:
   profiles: dev #开发模式
   application: 
-    name: springcloud-dept-config-dev
+    name: springcloud-dept-config-dev-client
+    
+eureka: #客户端注册进eureak的服务列表
+  client:
+    service-url:     
+       defaultZone: http://eureka8761.com:8761/eureka/ #注入的地址要的8761的一致 
 ---
+server:
+  port: 8202
+  
 spring:
   profiles:
     active:
@@ -16,4 +28,9 @@ spring:
 spring:
   profiles: test #测试模式
   application: 
-    name: springcloud-dept-config-test 
+    name: springcloud-dept-config-test-client
+    
+eureka: #客户端注册进eureak的服务列表
+  client:
+    service-url:     
+       defaultZone: http://eureka8761.com:8761/eureka/ #注入的地址要的8761的一致 
