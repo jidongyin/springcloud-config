@@ -1,6 +1,6 @@
 ---          
 server:
-  port: 8201
+  port: 8202
 
 spring:
   profiles:
@@ -18,7 +18,7 @@ eureka: #客户端注册进eureak的服务列表
       defaultZone: http://eureka8761.com:8761/eureka/ #注入的地址要的8761的一致 
       
 server:
-  port: 8202
+  port: 8201
 
 ---
 spring:
