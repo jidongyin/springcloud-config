@@ -10,7 +10,7 @@ server:
 spring:
   profiles: dev  #开发环境
   application:
-    name: springcloud-dept-provider                      #对外暴露的微服务的名称
+    name: springcloud-config-dept-client                      #对外暴露的微服务的名称
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource     #当前数据源的类型阿里云的
      driver-class-name: com.mysql.jdbc.Driver       #Mysql的驱动包org.git.mm.mysql.Driver
@@ -54,7 +54,7 @@ server:
 spring:
   profiles: test  #测试环境
   application:
-    name: springcloud-dept-provider                      #对外暴露的微服务的名称
+    name: springcloud-config-dept-client                      #对外暴露的微服务的名称
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource     #当前数据源的类型阿里云的
      driver-class-name: com.mysql.jdbc.Driver       #Mysql的驱动包org.git.mm.mysql.Driver
